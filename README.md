@@ -21,9 +21,6 @@ This is a Flask-based web application where users can register, log in, create b
    - Authenticated users can comment on posts.
    - The comments are linked to both the blog post and the user who made the comment.
 
-4. **Admin Privileges**:
-   - Admin users (with ID 1) have the ability to delete any post or comment.
-
 ## Project Setup
 
 ### Prerequisites
@@ -72,9 +69,6 @@ The project has the following folder structure:
 
    By default, the app will run on `http://localhost:5001/`. You can visit this URL to see the app in action.
 
-3. **Creating the First Admin User**:
-   - After launching the app, register the first user. This user will automatically be given admin privileges (ID = 1).
-   - Admin users can delete any blog post or comment, whereas regular users can only delete their own.
 
 ### Functionality Overview
 
@@ -86,16 +80,13 @@ The project has the following folder structure:
 - **View Posts**: The homepage displays all blog posts.
 - **Create Posts**: Logged-in users can create blog posts with a title, subtitle, body, and an image URL.
 - **Edit Posts**: Users can edit their own blog posts.
-- **Delete Posts**: Users can delete their own blog posts. Admin users can delete any post.
+- **Delete Posts**: Users can delete their own blog posts.
 
 #### Comments
 - **View Comments**: Comments are displayed on each blog post.
 - **Add Comments**: Logged-in users can comment on blog posts.
-- **Delete Comments**: Users can delete their own comments, and admins can delete any comment.
+- **Delete Comments**: Users can delete their own comments.
 
-#### Admin Privileges
-- The first registered user is assigned admin privileges (user ID = 1).
-- Admins can delete any post or comment, whereas regular users can only delete their own posts and comments.
 
 ### Forms
 
@@ -134,6 +125,7 @@ The app is run with `debug=True`, which provides better error messages and auto-
 - Enable rich text editing in the blog body (currently supported with CKEditor but can be improved).
 - Add pagination to the list of blog posts.
 - Implement email verification during user registration.
+- Adding admin privileges to users
 
 ## Contributing
 Pull requests are welcome. For significant changes, please open an issue first to discuss what you would like to change.
